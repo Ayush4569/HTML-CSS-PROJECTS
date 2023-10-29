@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+body{
+    font-size: 1.4rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+.navbar{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 1rem;
+}
+nav ul{
+    display: flex;
+    gap: 2rem; 
+     list-style: none;
+}
+nav ul li{
+    font-size: 1.8rem;
+    border-bottom: 2px solid transparent;
+}
+ul li:hover{
+    border-bottom: rgb(255, 251, 0) 2px solid;
+}
+nav i{
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 1200px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content h1{
+    font-size: 6rem;
+    line-height: 1.2;
+}
+.content h2{
+    font-weight: 300;
+    font-size: 25px;
+}
+.image img{
+    border-radius: 5rem;
+}
+.second{
+    margin-top: 30px;
+}
+.content2box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px;
+}
+.second-content{
+    height: 246px;
+    display: flex;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    line-height: 1.6;
+}
+.status p{
+    float: left;
+}
+.status button{
+    float: right;
+    margin-right: 30px;
+    border: none;
+    font-weight: 900;
+}
+.cardbox{
+    width: 1100px;
+    margin: 0 auto;
+}
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    border: 1px solid #e2e2e2;
+    margin: 30px 0;
+    max-width: 320px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card h2{
+   margin-left: 20px;
+   margin-top: 10px;
+}
+.card p{
+    padding:1rem;
+    font-size: 15px;
+}
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 8px;
+}
+.cardstatus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ button{
+    border: none;
+    background: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.last .container{
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px solid #e2e2e2;
+
+}
+.lastcontent{
+    display: flex;
+    align-items: center;
+    height: 497px;
+}
+ 
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 630px;
+    margin: 0 auto;
+    gap: 15px;
+}
+.texts button{
+    margin-left: 20px;
+}
+footer{
+    margin-top: 20px;
+    border-top: 2px solid #e2e2e2;
+}
+.footercontainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+footer i{
+    font-size:20px;
+}
+
+.homepage{
+    margin: 2px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.imgbox img{
+    width: 100%;
+}
+.flexcontent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.homepage h1{
+    font-size: 30px;
+}
+hr{
+    max-width: 1200px;
+    margin: 30px auto;
+    
+}
+.endpage{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

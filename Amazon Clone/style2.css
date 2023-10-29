@@ -1,0 +1,97 @@
+@media (max-width:700px) {
+   header{
+    width: 100vw;
+    background-color: #222f3d;
+    height: 18.5vh;
+   }
+   .navbar{
+    justify-content: space-between;
+   }
+   .navbar .logo{
+    align-self: flex-end;
+   }
+   .delivery{
+    display: none;
+   }
+   .search-bar{
+    position: absolute;
+    top: 50px;
+    width: 95vw;
+    margin-left: 0.5rem;
+   }
+   
+   .sign-in{
+    display: none;
+   }
+   .returns{
+    display: none;
+   }
+   .panel{
+    margin-top: 3rem;
+
+   }
+   .all-panel i{
+    font-size: 1.5rem;
+   }
+   
+   .all-panel{
+    display: flex;
+    font-size: 1rem;
+    gap:0.5rem;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+    align-items: center;
+
+}
+   .panel-items ul li{
+    font-size: 0.7rem;
+   }
+   .panel-items ul{
+    gap: 0.5rem;
+   }
+   .panel-deals{
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-top: 10px;
+   }
+   .hero-div1{
+    padding: 0.7rem;
+   }
+   .hero-div1 p{
+    font-size: 0.6rem;
+    line-height: 1.6;
+   }
+   .shop-section{
+    flex-direction: column;
+    align-items: center;
+   }
+   .box{
+    width: 85vw;
+   }
+   .foot-panel2 {
+    gap: 1rem;
+   }
+   .foot-panel2 ul{
+    margin-left: 0.3rem;
+   }
+   .foot-panel2 ul li{
+    font-size: 0.6rem;
+   }
+   .foot-panel2 ul p{
+    font-size: 0.7rem;
+   }
+   .footpanel-3{
+    justify-content: space-evenly;
+   }
+   .footpanel-3 .logo img{
+    margin-right: 0;
+   }
+   .footpanel-3 p{
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 0.7rem;
+   }
+   .footpanel-4{
+    height: 81px;
+   }
+}

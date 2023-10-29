@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    margin-bottom: 32px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 107px;
+}
+.logo{
+     margin-left:120px ;
+}
+.icon{
+    font-size: 32px;
+    margin-right: 120px;
+}
+.herosection{
+    /* min-height:70vh; */
+    display: flex;
+}
+.herosection .img{
+    margin-left: 110px;
+}
+.textcontainer{
+    /* border:2px solid green; */
+    max-height: 60vh;
+    margin-left: 100px;
+    /* padding: 30px; */
+    max-width: 40vw;
+    margin-top: 80px;
+}
+
+.textcontainer .green,.textcontainer h1,.textcontainer p,.textcontainer .btn{
+    margin-top: 20px
+}
+h1{
+    font-size: 72px;
+    font-weight: 400;
+}
+.green{
+    background-color: #149f39;
+    color:white;
+    padding:8px 15px;
+}
+.textcontainer p{
+    font-weight: 300;
+}
+.btn{
+    background-color: yellow;
+    color:black;
+    font-size: 13px;
+    padding:8px 15px;
+}
+.btn:hover{
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin:0px auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.item{
+    display: flex;
+    font-size: 15px;
+    padding:15px;
+}
+.item img{
+    height: 70px;
+   width: 70px;
+   position: relative;
+   top:12px;
+}
+.item:hover{
+    transition: all 0.2s;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    padding:20px 5px;
+}
+.textcontainer2{
+    padding:5px;
+    margin:0px 20px;
+    width:180px;
+}
+.divider{
+    border:2px solid #ccc;
+    margin:20px 130px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin:50px 0;
+    align-items: center;
+}
+.menu .tag{
+    align-self: center;
+    background-color: #149f39;
+    color:white;
+    padding:5px 10px;
+    font-weight: 200;
+}
+.gridimage{
+    border-radius: 10px;
+    width:100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+.gridimage:hover{
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+.item1{
+    grid-area:I1 ;
+}
+.item2{
+    grid-area:I2 ;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+   grid-area:I4 ;
+}
+.item5{
+   grid-area:I5 ;
+}
+.item6{
+  grid-area: I6;
+}
+.item7{
+  grid-area:I7 ;
+}
+/*  Footer section */
+footer{
+    display: flex;
+    background-color: #fff0db;
+    justify-content: space-between;
+    padding: 30px; 
+}
+.color{
+    margin-bottom: 10px;
+    color: gray;
+}
+ul li a{
+    text-decoration: none;
+    color: black; 
+    font-weight: 300;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#Support h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+#Support input{
+    padding:5px 40px;
+}
+.icons{
+    margin-top: 20px;
+}
+.icon{
+    margin:0px 15px;
+}
+.icon_container{
+    display: flex;
+}
+ @media (max-width:786px) {
+    nav{
+        min-width: 100vw;
+        max-height: 90px;
+        background-color:rgb(2, 2, 34);
+        color: white;
+    }
+    .navbar{
+        align-items: center;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .logo img{
+        height:70px;
+        width:70px
+    }
+    .herosection{
+        width:100vw;
+        flex-direction: column;
+        overflow: hidden;
+        gap:1px;
+    }
+    }
+    .herosection img{
+        height: 250px;
+        width:250px;
+    }
+    .herosection .img{
+        margin: 0px auto;
+    }
+
+    .textcontainer{
+        min-height: 700px;
+        padding:0px 20px;
+    }
+    .textcontainer h1{
+        font-size: 45px;
+    }
+    .green{
+        padding: 5px 8px;
+    }
+    .textcontainer p{
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    .features{
+        flex-direction: column;
+        height: 500px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .menu{
+        margin-top: 5px;
+        gap: 20px;
+    }
+
+    .grid{
+        gap:5px;
+    }
+    footer{
+        flex-direction: column;
+    } 

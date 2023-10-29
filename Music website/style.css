@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto", sans-serif;;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin: 50px;
+}
+header{
+    background-color:var(--purple300) ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color:var(--body);
+}
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+    
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+.icon{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.hero-section{
+    color:white;
+    min-height: 100vh;
+    background: url(images/hero_image.png) no-repeat center center/cover;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position:relative;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section h1{
+    font-size: 92px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.music-section{
+    padding-top: 50px;
+    background:var(--purple500);
+}  
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+button{
+    padding:10px 15px;
+    border: none;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color:white;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color:white;
+}
+.about-music{
+    margin-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video-section{ 
+    background: url(images/video.png) no-repeat center center/cover;
+    min-height: 800px;
+    color:white;
+    display:grid ;
+    place-items: center;
+    text-align: center;
+}
+.video-section .container{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   margin-top: -200px;
+   position:relative;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+.giftcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-upper{
+    background: var(--purple600);
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-links h4{
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+   border-bottom : 2px solid white;
+}
+.footerlower{
+    background: var(--purple300);
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.gift-section{
+    scroll-margin: 50px;
+}
+@media (max-width:1000px){
+    header{
+        min-width: 100%;
+    }
+    nav{
+        padding:20px 20px;
+    }
+    nav ul{
+          display: none;
+    }
+    nav .logo{
+        font-size: 25px;
+    }
+    .icon{
+        display: block;
+        font-size: 30px;
+    }
+    .hero-section{
+        min-height: 100vh;
+        min-width: 100vw; 
+        padding: 50px;  
+        line-height:1.6;
+    }
+    .hero-section .container{
+        padding-bottom: 20px;
+        gap: 75px;
+        font-weight: 200;
+    }
+   .hero-section h1{
+        font-size: 70px;
+        font-weight: 300;
+    }
+    .hero-section h3{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .hero-section p{
+        font-size: 20px;
+        font-weight: 300;
+    } 
+    .music-section{
+        /* min-height: 100vh; */
+        width: 100vw;
+        padding: 30px;
+        line-height: 2.5;
+    }
+    .music-section h4,.music-section p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 350;
+        }
+    .ipad-iphone-img{
+        display: none;
+            /* top: 400px;
+            margin-bottom: -1000px; */
+        }
+
+    /* .ipad-iphone-img img{
+        height: 200px;
+        width: 200px;
+    } */
+    .about-music{
+        margin-top:20px;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px;
+        font-weight: 300;
+        line-height: 1.6;
+
+    }
+    .mac-img{
+        margin-top: 20px;
+    }
+    .mac-img img{
+        height: 200px;
+        width: 300px;
+    }
+    .video-section{
+        min-height: 100vh;
+        min-width: 100vw;
+        margin-top: -50px;
+    }
+    .video-section .container{
+        margin-top: 40px;
+        line-height: 2;
+        /* height: 800px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .gift-section{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: url("https://images.unsplash.com/photo-1607344645866-009c320b63e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80") no-repeat center center/cover;
+
+        color:white;
+    }
+    .gift-card img{
+        height: 200px;
+        width:200px
+    }
+    .giftcontent{
+        padding: 15px 20px;
+        line-height: 1.8;
+    }
+    .giftcontent h3, .giftcontent p{
+        text-align: center;
+        font-weight: 350;
+    }
+    .secondary-btn{
+        margin-bottom: 8px;
+    }
+    .footer-upper{
+        min-width: 100%;
+        padding: 20px;
+    }
+    .footer-upper .container{
+        flex-direction: column;
+        align-items:stretch;
+    }
+    .footer-links h4{
+        margin-top: 40px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid cyan;
+        display: inline-block;
+    }
+
+
+} 

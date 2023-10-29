@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+.section_1{
+    min-height: 100vh;
+    background: url("images/developer.png") no-repeat center center/cover ;
+}
+.textcontainer{
+    color:white;
+    max-width: 900px;
+    margin:0 auto;
+    padding-top: 64px;
+    padding-left: 16px;
+}
+.lg_text{
+    font-size: 72px;
+    font-weight: 400;
+}
+.blackbox{
+    background-color: black;
+    min-height: 180px;
+}
+.text2container{
+    min-height: 180px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work_role{
+    margin:50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.work{
+    margin: 0px 30px;
+    padding:5px 10px;
+    max-width: 330px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+}
+.work:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+}
+.work h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+}
+.work p{
+    text-align: justify;
+}
+.about_contact{
+min-height: 300px;
+}
+.contact{
+    min-height: 300px;
+    width:50%;
+    color:white;
+    float: left;
+    padding: 32px;
+    background-color: #515603;
+}
+.about{
+    min-height: 300px;
+    width:50%;
+    color:white;
+    float: right;
+    padding: 32px;
+    background-color: #722300;
+}
+.contact h2, .about h2{
+    font-size: 64px;
+    font-weight: 300;
+}
+.contact p, .about p{
+    margin-top:15px;
+}
+footer{
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    /* min-height: 80px; */
+    text-align: center;
+    padding:20px;
+}
